@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sty" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&family=Sen:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
@@ -15,9 +19,29 @@
   <body>
     <div class="navbar">
       <div class="navbar-container">
-        <div class="logo-container"></div>
-        <div class="menu-container"></div>
-        <div class="profile-container"></div>
+        <div class="logo-container"><h1 class="logo">Flakes</h1></div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">Home</li>
+            <li class="menu-list-item">Movies</li>
+            <li class="menu-list-item">Series</li>
+            <li class="menu-list-item">Popular</li>
+            <li class="menu-list-item">Trends</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img
+            src="img/profile.jpg"
+            alt="profile-picture"
+            class="profile-picture"
+          />
+          <div class="profile-text-container">
+            <span class="profile-text">
+              Profile
+              <i class="fa-solid fa-caret-down"></i>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="sidebar"></div>
