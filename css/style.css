@@ -157,4 +157,22 @@ body {
 .movie-list-item-image {
   width: 270px;
   height: 200px;
+  object-fit: cover;
+  transition: all ease-in-out 0.8s;
+  margin: 0 30px;
+}
+
+.movie-list {
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  transition: all ease-in-out 1.5s;
+}
+
+.movie-list-item:hover .movie-list-item-image {
+  transform: scale(1.2);
 }
