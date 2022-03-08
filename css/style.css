@@ -159,7 +159,6 @@ body {
   height: 200px;
   object-fit: cover;
   transition: all ease-in-out 0.8s;
-  margin: 0 30px;
 }
 
 .movie-list {
@@ -171,8 +170,32 @@ body {
 .movie-list-item {
   margin-right: 30px;
   transition: all ease-in-out 1.5s;
+  position: relative;
+}
+
+.movie-list-item-title {
+  background-color: #333;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  /* opacity: 0; */
+}
+
+.movie-list-item-desc {
+  background-color: #333;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  /* opacity: 0; */
 }
 
 .movie-list-item:hover .movie-list-item-image {
   transform: scale(1.2);
+  margin: 0 30px;
 }
