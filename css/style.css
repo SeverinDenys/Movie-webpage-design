@@ -181,7 +181,8 @@ body {
   position: absolute;
   top: 10px;
   left: 50px;
-  /* opacity: 0; */
+  opacity: 0;
+  transition: 1s all ease-in-out;
 }
 
 .movie-list-item-desc {
@@ -192,10 +193,33 @@ body {
   top: 30%;
   left: 50px;
   width: 230px;
-  /* opacity: 0; */
+  opacity: 0;
+  transition: 1s all ease-in-out;
 }
 
 .movie-list-item:hover .movie-list-item-image {
   transform: scale(1.2);
   margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: #4dbf00;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
 }
