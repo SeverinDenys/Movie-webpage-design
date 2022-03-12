@@ -105,6 +105,7 @@ body {
   right: 1px;
   border-radius: 50%;
   cursor: pointer;
+  transition: 1s ease all;
 }
 
 .left-menu-icon {
@@ -242,32 +243,32 @@ body {
   opacity: 0.5;
 }
 
-.container {
+.container.active {
   background-color: white;
 }
 
-.movie-list-title {
+.movie-list-title.active {
   color: black;
 }
 
-.navbar-container {
+.navbar-container.active {
   color: black;
   background-color: white;
 }
 
-.sidebar {
+.sidebar.active {
   background-color: white;
 }
 
-.left-menu-icon {
+.left-menu-icon.active {
   color: black;
 }
 
-.toggle {
+.toggle.active {
   background-color: black;
 }
 
-.toggle-ball {
+.toggle-ball.active {
   background-color: white;
   transform: translateX(-20px);
 }
